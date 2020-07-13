@@ -29,16 +29,14 @@ class App extends React.Component {
     }
 
 
-    // calcItemTotal = (i) = => {
-      
-    // }
-
   }
   render() {
+    // initializing variables
     let item1 = this.state.items[0]
     let item2 = this.state.items[1]
     let item3 = this.state.items[2]
-    // let itemTotal = this.state.items.price * this.state.items.quantity
+    let salesTax = 0.06
+    let shipping = 9.99
 
 
   return (
@@ -47,6 +45,7 @@ class App extends React.Component {
 
         <div className='items'>
           <h1>items</h1>
+
           {/* ITEM 1 */}
           <div className="itemName">        
             <h3>{item1.name}</h3>
@@ -60,6 +59,8 @@ class App extends React.Component {
           <div className='itemTotal'>
             <p>${item1.price * item1.quantity}</p>
           </div>
+
+
           {/* ITEM 2 */}
           <div className="itemName">
             <h3>{item2.name}</h3>
@@ -68,8 +69,13 @@ class App extends React.Component {
             <p>Quantity: {item2.quantity}</p>
           </div>
           <div className='itemPrice'>
-            <p>Price: {item2.price}</p>
+            <p>Price: ${item2.price}</p>
           </div>
+          <div className='itemTotal'>
+            <p>${item2.price * item2.quantity}</p>
+          </div>
+
+
           {/* ITEM 3 */}
           <div className="itemName">
             <h3>{item3.name}</h3>
@@ -78,9 +84,13 @@ class App extends React.Component {
             <p>Quantity: {item3.quantity}</p>
           </div>
           <div className='itemPrice'>
-            <p>Price: {item3.price}</p>
+            <p>Price: ${item3.price}</p>
           </div>
-        </div>
+          <div className='itemTotal'>
+            <p>${item3.price * item3.quantity}</p>
+          </div>
+        </div> {/* END OF ITEMS */}
+
 
         <div className="cartTotal">
           <h1>cart total</h1>
