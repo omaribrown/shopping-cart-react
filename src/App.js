@@ -67,7 +67,7 @@ class App extends React.Component {
             <p>Price: {item1.price}</p>
           </div>
           <div className='itemTotal'>
-            <p>${item1.price * item1.quantity}</p>
+            <p>Item Total: ${item1.price * item1.quantity}</p>
           </div>
           </div>
 
@@ -91,7 +91,7 @@ class App extends React.Component {
             <p>Price: ${item2.price}</p>
           </div>
           <div className='itemTotal'>
-            <p>${item2.price * item2.quantity}</p>
+            <p>Item Total: ${item2.price * item2.quantity}</p>
           </div>
           </div>
 
@@ -116,7 +116,7 @@ class App extends React.Component {
             <p>Price: ${item3.price}</p>
           </div>
           <div className='itemTotal'>
-            <p>${item3.price * item3.quantity}</p>
+            <p>Item Total: ${item3.price * item3.quantity}</p>
           </div>
           </div>
         </div> {/* END OF ITEMS */}
