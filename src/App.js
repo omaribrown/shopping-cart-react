@@ -52,6 +52,7 @@ class App extends React.Component {
           <div className="itemName">        
             <h3>{item1.name}</h3>
           </div>
+          <div class='itemChunk'>
           <div className='itemQuantity'>
             <p>Quantity: {item1.quantity}</p>
           </div>
@@ -61,12 +62,14 @@ class App extends React.Component {
           <div className='itemTotal'>
             <p>${item1.price * item1.quantity}</p>
           </div>
+          </div>
 
 
           {/* ITEM 2 */}
           <div className="itemName">
             <h3>{item2.name}</h3>
           </div>
+          <div class='itemChunk'>
           <div className='itemQuantity'>
             <p>Quantity: {item2.quantity}</p>
           </div>
@@ -76,12 +79,15 @@ class App extends React.Component {
           <div className='itemTotal'>
             <p>${item2.price * item2.quantity}</p>
           </div>
+          </div>
 
 
           {/* ITEM 3 */}
+          
           <div className="itemName">
             <h3>{item3.name}</h3>
           </div>
+          <div class='itemChunk'>
           <div className='itemQuantity'>
             <p>Quantity: {item3.quantity}</p>
           </div>
@@ -90,6 +96,7 @@ class App extends React.Component {
           </div>
           <div className='itemTotal'>
             <p>${item3.price * item3.quantity}</p>
+          </div>
           </div>
         </div> {/* END OF ITEMS */}
 
