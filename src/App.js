@@ -27,9 +27,13 @@ class App extends React.Component {
         }
       ]
     }
-
-
   }
+
+  // incQuantity = (i) => {
+  //   this.setState({
+  //     quantity: this.state.items[i].quantity++
+  //   })
+  // }
   render() {
     // initializing variables
     let item1 = this.state.items[0]
@@ -59,13 +63,15 @@ class App extends React.Component {
           </div>
           <div class='itemChunk'>
           <div class='itemImg'>
-            <p>img</p>
+            <img src={require('./assets/football.jpg')} />
           </div>
           <div className='itemQuantity'>
             <p>Quantity: {item1.quantity}</p>
           </div>
           <div className='incButtons'>
-            <button>+</button>
+            <button 
+              // onClick={item1.quantity++}
+              >+</button>
             <button>-</button>
           </div>
           <div className='itemPrice'>
@@ -83,7 +89,7 @@ class App extends React.Component {
           </div>
           <div class='itemChunk'>
           <div class='itemImg'>
-            <p>img</p>
+          <img src={require('./assets/basketball.jpg')} />
           </div>
           <div className='itemQuantity'>
             <p>Quantity: {item2.quantity}</p>
@@ -108,7 +114,7 @@ class App extends React.Component {
           </div>
           <div class='itemChunk'>
           <div class='itemImg'>
-            <p>img</p>
+          <img src={require('./assets/golf-balls.jpg')} />
           </div>
           <div className='itemQuantity'>
             <p>Quantity: {item3.quantity}</p>
