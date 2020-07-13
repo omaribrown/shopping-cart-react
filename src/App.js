@@ -13,7 +13,8 @@ class App extends React.Component {
         {
           name: "Wilson Football",
           quantity: 1,
-          price: 14.99
+          price: 14.99,
+          // itemTotal: this.price * this.quantity
         },
         {
           name: "Wilson Basketball",
@@ -28,13 +29,16 @@ class App extends React.Component {
       ]
     }
 
-    
+    // calcItemTotal = (i) = => {
+      
+    // }
 
   }
   render() {
     let item1 = this.state.items[0]
     let item2 = this.state.items[1]
     let item3 = this.state.items[2]
+
   return (
     <div className="App">
       <div className="items-and-cart-total">
@@ -50,6 +54,9 @@ class App extends React.Component {
           </div>
           <div className='itemPrice'>
             <p>Price: {item1.price}</p>
+          </div>
+          <div className='itemTotal'>
+            <p>{item1.itemTotal}</p>
           </div>
           {/* ITEM 2 */}
           <div className="itemName">
