@@ -35,6 +35,7 @@ class App extends React.Component {
     let item1 = this.state.items[0]
     let item2 = this.state.items[1]
     let item3 = this.state.items[2]
+    let subtotal = (item1.price * item1.quantity) + (item2.price * item2.quantity) + (item3.price * item3.quantity)
     let salesTax = 0.06
     let shipping = 9.99
 
@@ -94,7 +95,7 @@ class App extends React.Component {
 
         <div className="cartTotal">
           <h1>Cart Total</h1>
-          <h3>Subtotal: ${(item1.price * item1.quantity) + (item2.price * item2.quantity) + (item3.price * item3.quantity)}</h3>
+          <h3>Subtotal: ${subtotal}</h3>
         </div> 
 
       </div>
@@ -102,7 +103,12 @@ class App extends React.Component {
 
 
       <div class='summary'>
-        <h1>Summary</h1>
+        <h2>Summary</h2>
+        <h3>Subtotal: ${subtotal} </h3>
+        <h3>Shipping: ${shipping}</h3>
+        <h3>Tax: ${(subtotal * .06).toFixed(2)}</h3>
+        <br />
+        <h2>Total: ${}</h2>
       </div>
     </div>
   )
