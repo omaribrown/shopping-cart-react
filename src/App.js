@@ -46,15 +46,22 @@ class App extends React.Component {
       <div className="items-and-cart-total">
 
         <div className='items'>
-          <h1>items</h1>
+          <h1>Items</h1>
 
           {/* ITEM 1 */}
           <div className="itemName">        
             <h3>{item1.name}</h3>
           </div>
           <div class='itemChunk'>
+          <div class='itemImg'>
+            <p>img</p>
+          </div>
           <div className='itemQuantity'>
             <p>Quantity: {item1.quantity}</p>
+          </div>
+          <div className='incButtons'>
+            <button>+</button>
+            <button>-</button>
           </div>
           <div className='itemPrice'>
             <p>Price: {item1.price}</p>
@@ -70,8 +77,15 @@ class App extends React.Component {
             <h3>{item2.name}</h3>
           </div>
           <div class='itemChunk'>
+          <div class='itemImg'>
+            <p>img</p>
+          </div>
           <div className='itemQuantity'>
             <p>Quantity: {item2.quantity}</p>
+          </div>
+          <div className='incButtons'>
+            <button>+</button>
+            <button>-</button>
           </div>
           <div className='itemPrice'>
             <p>Price: ${item2.price}</p>
@@ -88,8 +102,15 @@ class App extends React.Component {
             <h3>{item3.name}</h3>
           </div>
           <div class='itemChunk'>
+          <div class='itemImg'>
+            <p>img</p>
+          </div>
           <div className='itemQuantity'>
             <p>Quantity: {item3.quantity}</p>
+          </div>
+          <div className='incButtons'>
+            <button>+</button>
+            <button>-</button>
           </div>
           <div className='itemPrice'>
             <p>Price: ${item3.price}</p>
