@@ -14,17 +14,17 @@ class App extends React.Component {
           name: "Wilson Football",
           quantity: 1,
           price: 14.99
+        },
+        {
+          name: "Wilson Basketball",
+          quantity: 1,
+          price: 19.99
+        },
+        {
+          name: "Nike Golf Balls 6ct",
+          quantity: 1,
+          price: 9.99
         }
-        // {
-        //   name: "Wilson Basketball",
-        //   quantity: 1,
-        //   price: 19.99
-        // },
-        // {
-        //   name: "Nike Golf Balls 6ct",
-        //   quantity: 1,
-        //   price: 9.99
-        // }
       ]
     }
 
@@ -33,13 +33,16 @@ class App extends React.Component {
   }
   render() {
     let item1 = this.state.items[0]
+    let item2 = this.state.items[1]
+    let item3 = this.state.items[2]
   return (
     <div className="App">
       <div className="items-and-cart-total">
 
         <div className='items'>
           <h1>items</h1>
-          <div className="itemName">
+          {/* ITEM 1 */}
+          <div className="itemName">        
             <h3>{item1.name}</h3>
           </div>
           <div className='itemQuantity'>
@@ -47,6 +50,26 @@ class App extends React.Component {
           </div>
           <div className='itemPrice'>
             <p>Price: {item1.price}</p>
+          </div>
+          {/* ITEM 2 */}
+          <div className="itemName">
+            <h3>{item2.name}</h3>
+          </div>
+          <div className='itemQuantity'>
+            <p>Quantity: {item2.quantity}</p>
+          </div>
+          <div className='itemPrice'>
+            <p>Price: {item2.price}</p>
+          </div>
+          {/* ITEM 3 */}
+          <div className="itemName">
+            <h3>{item3.name}</h3>
+          </div>
+          <div className='itemQuantity'>
+            <p>Quantity: {item3.quantity}</p>
+          </div>
+          <div className='itemPrice'>
+            <p>Price: {item3.price}</p>
           </div>
         </div>
 
