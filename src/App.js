@@ -63,7 +63,7 @@ class App extends React.Component {
           </div>
           <div class='itemChunk'>
           <div class='itemImg'>
-            <img src={require('./assets/football.jpg')} />
+            <img src={require('./assets/football.jpg')} alt={item1.name} />
           </div>
           <div className='itemQuantity'>
             <p>Quantity: {item1.quantity}</p>
@@ -89,7 +89,7 @@ class App extends React.Component {
           </div>
           <div class='itemChunk'>
           <div class='itemImg'>
-          <img src={require('./assets/basketball.jpg')} />
+          <img src={require('./assets/basketball.jpg')} alt={item2.name} />
           </div>
           <div className='itemQuantity'>
             <p>Quantity: {item2.quantity}</p>
@@ -106,7 +106,6 @@ class App extends React.Component {
           </div>
           </div>
 
-
           {/* ITEM 3 */}
           
           <div className="itemName">
@@ -114,7 +113,7 @@ class App extends React.Component {
           </div>
           <div class='itemChunk'>
           <div class='itemImg'>
-          <img src={require('./assets/golf-balls.jpg')} />
+          <img src={require('./assets/golf-balls.jpg')} alt={item3.name} />
           </div>
           <div className='itemQuantity'>
             <p>Quantity: {item3.quantity}</p>
@@ -144,7 +143,8 @@ class App extends React.Component {
         <br />
         <h2>Total: ${((subtotal * salesTax) + subtotal + shipping).toFixed(2)}
         {console.log(subtotal)}</h2>
-      </div>
+        <button className='checkoutButton'>Continue to Checkout</button>
+      </div> {/* END OF SUMMARY */}
     </div>
   )
   }
