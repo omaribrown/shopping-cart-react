@@ -45,6 +45,11 @@ class App extends React.Component {
     <div className="App">
       <div className="items-and-cart-total">
 
+      <div className="cartTotal">
+          <h1>Cart Total</h1>
+          <h3>Subtotal: ${subtotal}</h3>
+        </div> 
+
         <div className='items'>
           <h1>Items</h1>
 
@@ -120,12 +125,6 @@ class App extends React.Component {
           </div>
           </div>
         </div> {/* END OF ITEMS */}
-
-
-        <div className="cartTotal">
-          <h1>Cart Total</h1>
-          <h3>Subtotal: ${subtotal}</h3>
-        </div> 
 
       </div> {/* END OF ITEMS AND SUBTOTAL */}
 
