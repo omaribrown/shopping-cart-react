@@ -29,11 +29,11 @@ class App extends React.Component {
     }
   }
 
-  // incQuantity = (i) => {
-  //   this.setState({
-  //     quantity: this.state.items[i].quantity++
-  //   })
-  // }
+  incQuantity = (i) => {
+    this.setState({
+      quantity: this.state.items[i].quantity += 1
+    })
+  }
   render() {
     // initializing variables
     let item1 = this.state.items[0]
@@ -70,7 +70,7 @@ class App extends React.Component {
           </div>
           <div className='incButtons'>
             <button 
-              // onClick={item1.quantity++}
+              onClick={this.incQuantity}
               >+</button>
             <button>-</button>
           </div>
