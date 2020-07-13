@@ -1,4 +1,4 @@
 .items-and-cart-total {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }

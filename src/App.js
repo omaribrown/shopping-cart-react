@@ -93,15 +93,16 @@ class App extends React.Component {
 
 
         <div className="cartTotal">
-          <h1>cart total</h1>
-        </div>
+          <h1>Cart Total</h1>
+          <h3>Subtotal: ${(item1.price * item1.quantity) + (item2.price * item2.quantity) + (item3.price * item3.quantity)}</h3>
+        </div> 
 
       </div>
 
 
 
       <div class='summary'>
-        <h1>summary</h1>
+        <h1>Summary</h1>
       </div>
     </div>
   )
