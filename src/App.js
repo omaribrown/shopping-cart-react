@@ -37,6 +37,7 @@ class App extends React.Component {
     let item3 = this.state.items[2]
     let subtotal = (item1.price * item1.quantity) + (item2.price * item2.quantity) + (item3.price * item3.quantity)
     let salesTax = 0.06
+    // let taxedTotal = (subtotal * .06).toFixed(2)
     let shipping = 9.99
 
 
@@ -98,7 +99,7 @@ class App extends React.Component {
           <h3>Subtotal: ${subtotal}</h3>
         </div> 
 
-      </div>
+      </div> {/* END OF ITEMS AND SUBTOTAL */}
 
 
 
@@ -108,7 +109,8 @@ class App extends React.Component {
         <h3>Shipping: ${shipping}</h3>
         <h3>Tax: ${(subtotal * .06).toFixed(2)}</h3>
         <br />
-        <h2>Total: ${}</h2>
+        <h2>Total: ${((subtotal * salesTax) + subtotal + shipping).toFixed(2)}
+        {console.log(subtotal)}</h2>
       </div>
     </div>
   )
