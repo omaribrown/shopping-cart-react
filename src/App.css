@@ -5,7 +5,6 @@
 }
 
 .items-and-cart-total {
-  border: 1px solid black;
   padding-left: 2em;
   height: 100vh;
   width: 60vw;
@@ -13,6 +12,8 @@
 
 .cartTotal {
   grid-area: cart-total;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .items {
@@ -50,7 +51,6 @@
 .summary {
   background-color: gainsboro;
   grid-area: summary;
-  border: 1px solid yellow;
   height: 100vh;
   width: 40vw;
   text-align: center;
