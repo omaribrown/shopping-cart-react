@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-// import Cart from './components/Cart'
-// import Items from './components/Items'
 
 
 class App extends React.Component {
@@ -57,8 +55,8 @@ class App extends React.Component {
       <div className="cartTotal">
           <h1>Cart Total</h1>
           <h3>Subtotal: ${subtotal}</h3>
+          <hr className='bigHr'/>
         </div> 
-
         <div className='items'>
           <h1>Items</h1>
 
@@ -159,7 +157,8 @@ class App extends React.Component {
 
 
       <div class='summary'>
-        <h2>Summary</h2>
+        <h1>Summary</h1>
+        <hr className='bigHr' />
         <div class='summaryTotals'>
           <h3>Subtotal: ${subtotal} </h3>
           <h3>Shipping: ${shipping}</h3>
