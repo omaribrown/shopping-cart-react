@@ -31,9 +31,15 @@ class App extends React.Component {
 
   incQuantity = (i) => {
     this.setState({
-      quantity: this.state.items[i].quantity += 1
-    })
+      quantity: this.state.items[i].quantity++
+    });
   }
+  decQuantity = (i) => {
+    this.setState({
+      quantity: this.state.items[i].quantity--
+    });
+  }
+
   render() {
     // initializing variables
     let item1 = this.state.items[0]
@@ -41,7 +47,6 @@ class App extends React.Component {
     let item3 = this.state.items[2]
     let subtotal = (item1.price * item1.quantity) + (item2.price * item2.quantity) + (item3.price * item3.quantity)
     let salesTax = 0.06
-    // let taxedTotal = (subtotal * .06).toFixed(2)
     let shipping = 9.99
 
 
@@ -70,7 +75,9 @@ class App extends React.Component {
           </div>
           <div className='incButtons'>
             <button 
-              onClick={this.incQuantity}
+              onClick={() => {
+                this.incQuantity(0)
+              }}
               >+</button>
             <button>-</button>
           </div>
