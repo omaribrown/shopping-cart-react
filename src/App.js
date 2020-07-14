@@ -73,13 +73,16 @@ class App extends React.Component {
           <div className='itemQuantity'>
             <p>Quantity: {item1.quantity}</p>
           </div>
-          <div className='incButtons'>
+          <div className='quantityBtn'>
+            <button
+              onClick={() => {
+                this.decQuantity(0)
+              }}>-</button>
             <button 
               onClick={() => {
                 this.incQuantity(0)
               }}
               >+</button>
-            <button>-</button>
           </div>
           <div className='itemPrice'>
             <p>Price: {item1.price}</p>
@@ -101,9 +104,16 @@ class App extends React.Component {
           <div className='itemQuantity'>
             <p>Quantity: {item2.quantity}</p>
           </div>
-          <div className='incButtons'>
-            <button>+</button>
-            <button>-</button>
+          <div className='quantityBtn'>
+            <button
+              onClick={() => {
+                this.decQuantity(1)
+              }}>-</button>
+            <button 
+              onClick={() => {
+                this.incQuantity(1)
+              }}
+              >+</button>
           </div>
           <div className='itemPrice'>
             <p>Price: ${item2.price}</p>
@@ -125,9 +135,16 @@ class App extends React.Component {
           <div className='itemQuantity'>
             <p>Quantity: {item3.quantity}</p>
           </div>
-          <div className='incButtons'>
-            <button>+</button>
-            <button>-</button>
+          <div className='quantityBtn'>
+            <button
+              onClick={() => {
+                this.decQuantity(2)
+              }}>-</button>
+            <button 
+              onClick={() => {
+                this.incQuantity(2)
+              }}
+              >+</button>
           </div>
           <div className='itemPrice'>
             <p>Price: ${item3.price}</p>
