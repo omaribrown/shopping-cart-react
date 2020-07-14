@@ -92,7 +92,6 @@ class App extends React.Component {
           </div>
           </div>
 
-
           {/* ITEM 2 */}
           <div className="itemName">
             <h3>{item2.name}</h3>
@@ -161,13 +160,15 @@ class App extends React.Component {
 
       <div class='summary'>
         <h2>Summary</h2>
-        <h3>Subtotal: ${subtotal} </h3>
-        <h3>Shipping: ${shipping}</h3>
-        <h3>Tax: ${(subtotal * .06).toFixed(2)}</h3>
-        <br />
-        <h2>Total: ${((subtotal * salesTax) + subtotal + shipping).toFixed(2)}
-        {console.log(subtotal)}</h2>
-        <button className='checkoutButton'>Continue to Checkout</button>
+        <div class='summaryTotals'>
+          <h3>Subtotal: ${subtotal} </h3>
+          <h3>Shipping: ${shipping}</h3>
+          <h3>Tax: ${(subtotal * .06).toFixed(2)}</h3>
+          <br />
+          <h2>Total: ${((subtotal * salesTax) + subtotal + shipping).toFixed(2)}
+          {console.log(subtotal)}</h2>
+          <button className='checkoutButton'>Continue to Checkout</button>
+        </div>
       </div> {/* END OF SUMMARY */}
     </div>
   )

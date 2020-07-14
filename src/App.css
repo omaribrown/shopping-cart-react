@@ -2,31 +2,26 @@
   display: grid;
   grid-template-areas: "cart-total summary"
                         "items summary";
-  /* flex-direction: column; */
 }
 
 .items-and-cart-total {
-  /* display: flex; */
-  /* flex-direction: column; */
   border: 1px solid black;
   padding-left: 2em;
+  height: 100vh;
+  width: 60vw;
 }
 
 .cartTotal {
-  /* display: flex; */
-  /* flex-direction: column; */
   grid-area: cart-total;
 }
 
 .items {
   grid-area: items;
-  /* padding-left: 2em; */
 }
 
 .itemChunk {
   display: flex;
   flex-direction: row;
-  /* padding: 2em; */
 }
 
 .itemImg > img {
@@ -54,9 +49,15 @@
 
 .summary {
   background-color: gainsboro;
-  /* display: flex; */
-  /* flex-direction: column; */
   grid-area: summary;
   border: 1px solid yellow;
-  padding-left: 2em;
+  height: 100vh;
+  width: 40vw;
+  text-align: center;
+}
+
+.summaryTotals {
+  padding-left: 3em;
+  padding-top: 2em;
+  text-align: left;
 }
